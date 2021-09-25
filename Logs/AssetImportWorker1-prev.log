@@ -1228,3 +1228,4 @@ Received Import Request.
   path: Assets/Prefabs/Level Objects/Spikes.prefab
   artifactKey: Guid(55968a0b2999b6d428e3faa10b77874c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Prefabs/Level Objects/Spikes.prefab using Guid(55968a0b2999b6d428e3faa10b77874c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '135b6c9fee37d2ace5ced20703eba54e') in 0.049951 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
