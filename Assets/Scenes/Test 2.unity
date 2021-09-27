@@ -2210,7 +2210,6 @@ GameObject:
   - component: {fileID: 377522411}
   - component: {fileID: 377522410}
   - component: {fileID: 377522412}
-  - component: {fileID: 377522413}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -2286,20 +2285,6 @@ MonoBehaviour:
   - {fileID: 1260131936}
   - {fileID: 686394072}
   - {fileID: 1272522984}
---- !u!114 &377522413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 377522409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b0be6a43ec44a44b9a9f4a397366f5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waitToLoad: 4
-  nextLevel: Test 2
 --- !u!1001 &382421429
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4767,7 +4752,6 @@ MonoBehaviour:
   dashCooldown: 1
   dashInvincibility: 0.5
   dashCounter: 0
-  canMove: 1
 --- !u!58 &1137737900
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11670,10 +11654,6 @@ PrefabInstance:
     - target: {fileID: 6508433872700557249, guid: 15e54ad9fa8ffd94c8628a203eb0ce29, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9010679871362507893, guid: 15e54ad9fa8ffd94c8628a203eb0ce29, type: 3}
-      propertyPath: levelToLoad
-      value: Test 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15e54ad9fa8ffd94c8628a203eb0ce29, type: 3}
