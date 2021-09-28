@@ -2038,6 +2038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waitToLoad: 4
   nextLevel: Test 2
+  isPaused: 0
 --- !u!1001 &382421429
 PrefabInstance:
   m_ObjectHideFlags: 0
