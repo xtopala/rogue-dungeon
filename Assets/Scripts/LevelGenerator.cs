@@ -26,6 +26,9 @@ public class LevelGenerator : MonoBehaviour
 
     private List<GameObject> genaratedOutlines = new List<GameObject>();
 
+    public RoomCenter centerStart, centerEnd;
+    public RoomCenter[] potentialCenters;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -63,15 +66,35 @@ public class LevelGenerator : MonoBehaviour
             CreateRoomOutline(room.transform.position);
         }
         CreateRoomOutline(endRoom.transform.position);
+
+        foreach(GameObject outline in genaratedOutlines)
+        {
+            if (outline.transform.position == Vector3.zero)
+            {
+                Instantiate(centerStart, outline.transform.position, transform.rotation).theRoom = outline.GetComponent<Room>();
+                continue;
+            }
+
+            if (outline.transform.position == endRoom.transform.position)
+            {
+                Instantiate(centerEnd, outline.transform.position, transform.rotation).theRoom = outline.GetComponent<Room>();
+                continue;
+            }
+
+            int centerSelect = Random.Range(0, potentialCenters.Length);
+            Instantiate(potentialCenters[centerSelect], outline.transform.position, transform.rotation).theRoom = outline.GetComponent<Room>();
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+#if UNITY_EDITOR
         if (Input.GetKey(KeyCode.R))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+#endif
     }
 
     public void MoveGenerationPoint()

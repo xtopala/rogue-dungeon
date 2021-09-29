@@ -1175,7 +1175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 414ba8c17fbc9a04aac3752cd9191503, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closeWhenEntered: 1
+  closeWhenEntered: 0
   doors:
   - {fileID: 5954449521199978849}
   roomActive: 0
