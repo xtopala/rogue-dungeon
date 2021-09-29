@@ -22,6 +22,8 @@ public class LevelGenerator : MonoBehaviour
 
     private List<GameObject> layoutRoomObjects = new List<GameObject>();
 
+    public RoomPrefabs rooms;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -83,4 +85,14 @@ public class LevelGenerator : MonoBehaviour
                 break;
         }
     }
+}
+
+[System.Serializable]
+public class RoomPrefabs
+{
+    public GameObject singleUp, singleDown, singleRight, singleLeft,
+        doubleUpDown, doubleLeftRight, doubleUpRight, doubleRightDown, doubleDownLeft, doubleLeftUp,
+        tripleUpRightDown, tripleRightDownLeft, tripleDownLeftUp, tripleLeftUpRight,
+        fourway;
+
 }
