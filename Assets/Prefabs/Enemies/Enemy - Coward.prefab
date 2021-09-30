@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1379444416135728428}
   - component: {fileID: 1379444416135728427}
   m_Layer: 8
-  m_Name: Enemy - Covard
+  m_Name: Enemy - Coward
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

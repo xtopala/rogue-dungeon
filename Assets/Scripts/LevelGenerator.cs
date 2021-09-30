@@ -229,7 +229,7 @@ public class LevelGenerator : MonoBehaviour
                 break;
 
             case 4:
-                genaratedOutlines.Add(Instantiate(rooms.tripleLeftUpRight, roomPosition, transform.rotation));
+                genaratedOutlines.Add(Instantiate(rooms.fourway, roomPosition, transform.rotation));
                 break;
         }
     }

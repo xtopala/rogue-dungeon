@@ -106,9 +106,11 @@ MonoBehaviour:
   - {fileID: 7162063663321038565, guid: 561117e0567457f48925ada4f3714fe4, type: 3}
   - {fileID: 3977311355103613038, guid: 0b8d2074680420540bc9bb49af9cc18a, type: 3}
   maxPieces: 5
-  shouldDropItem: 0
-  itemsToDrop: []
-  itemDropPercent: 0
+  shouldDropItem: 1
+  itemsToDrop:
+  - {fileID: 9192950842299996226, guid: 76f939b2b2f599a42a4312a4d08a5a86, type: 3}
+  - {fileID: 5108516126887172329, guid: 42ff858b5132b34499c9a68470ee2759, type: 3}
+  itemDropPercent: 25
 --- !u!61 &7977908550221357430
 BoxCollider2D:
   m_ObjectHideFlags: 0
