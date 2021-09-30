@@ -203,6 +203,17 @@ MonoBehaviour:
   rangeToChaseePlayer: 7
   shouldRunAway: 0
   runAwayRange: 0
+  shouldWander: 0
+  wanderLength: 0
+  pauseLength: 0
+  shouldPatrol: 0
+  patrolPoints: []
+  shouldShoot: 1
+  bullet: {fileID: 6834743280997183694, guid: ffa0be959fe478a42b3a6f3d9ebca307, type: 3}
+  firePoint: {fileID: 4312192022406344199}
+  fireRate: 1
+  shootRange: 10
+  theBody: {fileID: 337316784591128908}
   anim: {fileID: 337316784941070664}
   health: 150
   deathSplatters:
@@ -211,12 +222,10 @@ MonoBehaviour:
   - {fileID: 7315057461552683489, guid: de4da77b3bf2a0c4db2fa7360c801aa7, type: 3}
   - {fileID: 1838979853118084325, guid: 5223859509810414e9cf92589e9e4660, type: 3}
   hitEffect: {fileID: 1688493608687596539, guid: 8a409ba1cf3c30f4880297f4c419e079, type: 3}
-  shouldShoot: 1
-  bullet: {fileID: 6834743280997183694, guid: ffa0be959fe478a42b3a6f3d9ebca307, type: 3}
-  firePoint: {fileID: 4312192022406344199}
-  fireRate: 1
-  shootRange: 10
-  theBody: {fileID: 337316784591128908}
+  shouldDropItem: 1
+  itemsToDrop:
+  - {fileID: 8733607440930679105, guid: 3214934faa19345428469538e0106ccf, type: 3}
+  itemDropPercent: 20
 --- !u!1 &5292445747413420559
 GameObject:
   m_ObjectHideFlags: 0
