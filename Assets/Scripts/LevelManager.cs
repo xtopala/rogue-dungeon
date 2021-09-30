@@ -12,6 +12,8 @@ public class LevelManager : MonoBehaviour
 
     public bool isPaused;
 
+    public int currentCoins;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,6 +56,20 @@ public class LevelManager : MonoBehaviour
             isPaused = false;
 
             Time.timeScale = 1f;
+        }
+    }
+
+    public void GetCoins(int amount)
+    {
+        currentCoins += amount;
+    }
+
+    public void SpendCoins(int amount)
+    {
+        currentCoins -= amount;
+        if (currentCoins < 0)
+        {
+            currentCoins = 0;
         }
     }
 }
