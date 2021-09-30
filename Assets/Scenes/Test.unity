@@ -722,6 +722,7 @@ MonoBehaviour:
   waitToLoad: 4
   nextLevel: Victory
   isPaused: 0
+  currentCoins: 0
 --- !u!1 &454144394
 GameObject:
   m_ObjectHideFlags: 0
