@@ -10,6 +10,8 @@ public class ShopItem : MonoBehaviour
 
     public int itemCost;
 
+    public int healthUpgradeAmount;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,10 +28,24 @@ public class ShopItem : MonoBehaviour
                 if (LevelManager.instance.currentCoins >= itemCost)
                 {
                     LevelManager.instance.SpendCoins(itemCost);
-                    if(isHealthRestore)
+
+                    if (isHealthRestore)
                     {
                         PlayerHealthController.instance.HealPlayer(PlayerHealthController.instance.maxHealth);
                     }
+
+                    if (isHealtUpgrade)
+                    {
+                        PlayerHealthController.instance.IncreaseMaxHealth(healthUpgradeAmount);
+                    }
+
+                    gameObject.SetActive(false);
+                    inBuyZone = false;
+
+                    AudioManager.instance.PlaySFX(18);
+                } else
+                {
+                    AudioManager.instance.PlaySFX(19);
                 }
             }
         }
