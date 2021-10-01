@@ -281,8 +281,40 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 316485285212445135, guid: a7780e48ab2d2d642a2f1de626e9d378, type: 3}
+      propertyPath: centerShop
+      value: 
+      objectReference: {fileID: 2544872988171893524, guid: 5c6d0c95f21837f499993532b8a5bdac, type: 3}
+    - target: {fileID: 316485285212445135, guid: a7780e48ab2d2d642a2f1de626e9d378, type: 3}
+      propertyPath: includeShop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 316485285212445135, guid: a7780e48ab2d2d642a2f1de626e9d378, type: 3}
+      propertyPath: shopColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 316485285212445135, guid: a7780e48ab2d2d642a2f1de626e9d378, type: 3}
+      propertyPath: shopColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 316485285212445135, guid: a7780e48ab2d2d642a2f1de626e9d378, type: 3}
+      propertyPath: shopColor.g
+      value: 0.96268535
+      objectReference: {fileID: 0}
+    - target: {fileID: 316485285212445135, guid: a7780e48ab2d2d642a2f1de626e9d378, type: 3}
+      propertyPath: shopColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 316485285212445135, guid: a7780e48ab2d2d642a2f1de626e9d378, type: 3}
       propertyPath: distanceToEnd
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 316485285212445135, guid: a7780e48ab2d2d642a2f1de626e9d378, type: 3}
+      propertyPath: maxDistanceToShop
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 316485285212445135, guid: a7780e48ab2d2d642a2f1de626e9d378, type: 3}
+      propertyPath: minDistanceToShop
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 316485285212445135, guid: a7780e48ab2d2d642a2f1de626e9d378, type: 3}
       propertyPath: potentialCenters.Array.size
