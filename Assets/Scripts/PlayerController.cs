@@ -38,6 +38,9 @@ public class PlayerController : MonoBehaviour
     {
         theCam = Camera.main;
         activeMoveSpeed = moveSpeed;
+
+        UIController.instance.currentGun.sprite = availableGuns[currentGun].gunUI;
+        UIController.instance.gunText.text = availableGuns[currentGun].weaponName;
     }
 
     // Update is called once per frame
@@ -143,5 +146,8 @@ public class PlayerController : MonoBehaviour
         }
 
         availableGuns[currentGun].gameObject.SetActive(true);
+
+        UIController.instance.currentGun.sprite = availableGuns[currentGun].gunUI;
+        UIController.instance.gunText.text = availableGuns[currentGun].weaponName;
     }
 }

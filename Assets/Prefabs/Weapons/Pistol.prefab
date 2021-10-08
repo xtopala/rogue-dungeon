@@ -100,6 +100,8 @@ MonoBehaviour:
   bulletToFire: {fileID: 4190393382302206469, guid: 6d4a004477e455445b17948b3cbb3a27, type: 3}
   firePoint: {fileID: 456845962862769983}
   timeBetweenShots: 0.75
+  weaponName: Pistol
+  gunUI: {fileID: 262978286505467586, guid: f72804754a2106a4884d758772ef2a02, type: 3}
 --- !u!1 &8553883911816309376
 GameObject:
   m_ObjectHideFlags: 0

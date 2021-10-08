@@ -130,3 +130,5 @@ MonoBehaviour:
   bulletToFire: {fileID: 3147404889754053106, guid: ecab8819d825e0e4e8bf49e652fa277a, type: 3}
   firePoint: {fileID: 3134134922183949129}
   timeBetweenShots: 1
+  weaponName: Revolver
+  gunUI: {fileID: -3940896912681915257, guid: f72804754a2106a4884d758772ef2a02, type: 3}

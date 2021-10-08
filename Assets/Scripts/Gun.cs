@@ -8,6 +8,9 @@ public class Gun : MonoBehaviour
     public float timeBetweenShots;
     private float shotCounter;
 
+    public string weaponName;
+    public Sprite gunUI;
+
     // Start is called before the first frame update
     void Start()
     {
