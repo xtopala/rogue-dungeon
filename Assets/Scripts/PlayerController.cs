@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -23,6 +24,9 @@ public class PlayerController : MonoBehaviour
     private float dashCoolCounter;
 
     [HideInInspector] public bool canMove = true;
+
+    public List<Gun> availableGuns = new List<Gun>();
+    private int currentGun;
 
     private void Awake()
     {
@@ -69,6 +73,23 @@ public class PlayerController : MonoBehaviour
             float angle = Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg;
             gunArm.rotation = Quaternion.Euler(0f, 0f, angle);
 
+            if (Input.GetKeyDown(KeyCode.Tab))
+            {
+                if (availableGuns.Count > 0)
+                {
+                    currentGun++;
+                    if (currentGun >= availableGuns.Count)
+                    {
+                        currentGun = 0;
+                    }
+                    SwitchGun();
+                }
+                else
+                {
+                    Debug.LogError("Player has no guns!");
+                }
+            }
+
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 if (dashCoolCounter <= 0 && dashCounter <= 0)
@@ -106,10 +127,21 @@ public class PlayerController : MonoBehaviour
             {
                 anim.SetBool("isMoving", false);
             }
-        } else
+        }
+        else
         {
             theRB.velocity = Vector2.zero;
             anim.SetBool("isMoving", false);
         }
+    }
+
+    public void SwitchGun()
+    {
+        foreach (Gun theGun in availableGuns)
+        {
+            theGun.gameObject.SetActive(false);
+        }
+
+        availableGuns[currentGun].gameObject.SetActive(true);
     }
 }
