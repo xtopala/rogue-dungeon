@@ -47,7 +47,15 @@ MonoBehaviour:
   layoutRoom: {fileID: 8807307030427270059, guid: b243caa2029e41d4d84e3f284f19fafd, type: 3}
   startColor: {r: 0, g: 0.9436557, b: 1, a: 1}
   endColor: {r: 1, g: 0.19814405, b: 0, a: 1}
-  distanceToEnd: 10
+  shopColor: {r: 1, g: 0.96268535, b: 0, a: 1}
+  gunRoomColor: {r: 0.4433962, g: 0.4433962, b: 0.4433962, a: 1}
+  distanceToEnd: 12
+  includeShop: 1
+  minDistanceToShop: 3
+  maxDistanceToShop: 7
+  includeGunRoom: 1
+  minDistanceToGunRoom: 5
+  maxDistanceToGunRoom: 8
   generatorPoint: {fileID: 316485286511223954}
   selectedDirection: 0
   xOffset: 18
@@ -73,9 +81,37 @@ MonoBehaviour:
     fourway: {fileID: 1008719914864349002, guid: dcc0d3c00717a964a895f5c0f367ddab, type: 3}
   centerStart: {fileID: 72356952079173469, guid: 58fba92bb7ed6a3418075dd8668a3896, type: 3}
   centerEnd: {fileID: 1228303077475281447, guid: 75099e139cd77164f81f80bcd38246ab, type: 3}
+  centerShop: {fileID: 2544872988171893524, guid: 5c6d0c95f21837f499993532b8a5bdac, type: 3}
+  centerGunRoom: {fileID: 3364552964434538101, guid: c12ee760c7555354a9455cb6fa5ad721, type: 3}
   potentialCenters:
-  - {fileID: 4901733156370649607, guid: e70696b457ac2e14eaa81dbc9b6b3953, type: 3}
-  - {fileID: 72356952079173469, guid: 58fba92bb7ed6a3418075dd8668a3896, type: 3}
+  - {fileID: 4265133087388543852, guid: 9cd5939d0508d7241af0ac902cbca27c, type: 3}
+  - {fileID: 3316081430492148759, guid: b6dcab3ca9dcafa4d8ce28b0b5610151, type: 3}
+  - {fileID: 100289202667781432, guid: d5dedc545a57a23428c5c4aa71d4b572, type: 3}
+  - {fileID: 6315650508117727098, guid: 7c5f88dc8b302f849906dc50e893f633, type: 3}
+  - {fileID: 1439264046627896047, guid: 69427515546f0db4293c209ee67965ff, type: 3}
+  - {fileID: 7857573130542593471, guid: c55f694cf21fb8f4e9b3a6b71e14e167, type: 3}
+  - {fileID: 4589273329640083412, guid: 4ed24ed1340e9064488463e448ad28a0, type: 3}
+  - {fileID: 3322256640752280090, guid: f89a983930b440e4392a22614b178be4, type: 3}
+  - {fileID: 261955395191778235, guid: c8ce39485b3715245b7b62eaf84b4b33, type: 3}
+  - {fileID: 5277191068379615281, guid: 601811e1a32f4c8438acfe81b6fef31a, type: 3}
+  - {fileID: 44533658575761754, guid: 854b49ddd6810b248ae3147c88d1638c, type: 3}
+  - {fileID: 302370507423172161, guid: 0f12a8371ffb85640810da3ad40c2c6f, type: 3}
+  - {fileID: 2723890183506794473, guid: a90e8e95c95e7f642b2c6a88d5fbae90, type: 3}
+  - {fileID: 2935961669788787703, guid: 7f99e393e8fc97e42bb3e3263078447c, type: 3}
+  - {fileID: 7473061405738889622, guid: 51617bfdf60a87443a2a1218ee0260be, type: 3}
+  - {fileID: 2497015778091431145, guid: 3e62f9e5a4cdc0c4ea07e5fbe284df82, type: 3}
+  - {fileID: 7097449682601473228, guid: 34d8f2d00682116489b58b4629fddc96, type: 3}
+  - {fileID: 7095879292636944903, guid: 98076b214fc553243b9bb9ff4ca588ee, type: 3}
+  - {fileID: 1567693732773877988, guid: 645fc3fed4c9a3b498d9024c9c48d46b, type: 3}
+  - {fileID: 2023923657117204474, guid: 1ae5045e64f3a574f9a164904f8bf7f4, type: 3}
+  - {fileID: 4449901692843651366, guid: fea629eab0e146d40b0e949fd7749e62, type: 3}
+  - {fileID: 641357831811483138, guid: ef7cd534c12add94ca78136f8116563d, type: 3}
+  - {fileID: 1706423139891524816, guid: 85d4f3ad054753d4a957d77591b9e310, type: 3}
+  - {fileID: 2692755375761647085, guid: 1e0ada43f68f5aa4596d68abc9f25e68, type: 3}
+  - {fileID: 4855289760588853347, guid: 7801de7237419d843ab6deaa46e27f94, type: 3}
+  - {fileID: 2318187166741996840, guid: 8e80a5cd24e3af04ca87262a1a05dcb6, type: 3}
+  - {fileID: 1992970157722798258, guid: baa0422f71ecc074889cb56dbf11f0aa, type: 3}
+  - {fileID: 8902065160530380710, guid: 61a063e2e9a90804b8a51906fd0f58d5, type: 3}
 --- !u!1 &316485286511223955
 GameObject:
   m_ObjectHideFlags: 0

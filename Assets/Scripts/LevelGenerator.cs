@@ -5,11 +5,13 @@ using UnityEngine.SceneManagement;
 public class LevelGenerator : MonoBehaviour
 {
     public GameObject layoutRoom;
-    public Color startColor, endColor, shopColor;
+    public Color startColor, endColor, shopColor, gunRoomColor;
 
     public int distanceToEnd;
     public bool includeShop;
     public int minDistanceToShop, maxDistanceToShop;
+    public bool includeGunRoom;
+    public int minDistanceToGunRoom, maxDistanceToGunRoom;
 
     public Transform generatorPoint;
 
@@ -20,7 +22,7 @@ public class LevelGenerator : MonoBehaviour
 
     public LayerMask whatIsRoom;
 
-    private GameObject endRoom, shopRoom;
+    private GameObject endRoom, shopRoom, gunRoom;
 
     private List<GameObject> layoutRoomObjects = new List<GameObject>();
 
@@ -28,7 +30,7 @@ public class LevelGenerator : MonoBehaviour
 
     private List<GameObject> genaratedOutlines = new List<GameObject>();
 
-    public RoomCenter centerStart, centerEnd, centerShop;
+    public RoomCenter centerStart, centerEnd, centerShop, centerGunRoom;
     public RoomCenter[] potentialCenters;
 
     // Start is called before the first frame update
@@ -69,6 +71,14 @@ public class LevelGenerator : MonoBehaviour
             shopRoom.GetComponent<SpriteRenderer>().color = shopColor;
         }
 
+        if (includeGunRoom)
+        {
+            int grSelector = Random.Range(minDistanceToGunRoom, maxDistanceToGunRoom + 1);
+            gunRoom = layoutRoomObjects[grSelector];
+            layoutRoomObjects.RemoveAt(grSelector);
+            gunRoom.GetComponent<SpriteRenderer>().color = gunRoomColor;
+        }
+
         // create room outlines
         CreateRoomOutline(Vector3.zero);
         foreach (GameObject room in layoutRoomObjects)
@@ -80,6 +90,11 @@ public class LevelGenerator : MonoBehaviour
         if (includeShop)
         {
             CreateRoomOutline(shopRoom.transform.position);
+        }
+
+        if (includeGunRoom)
+        {
+            CreateRoomOutline(gunRoom.transform.position);
         }
 
         foreach (GameObject outline in genaratedOutlines)
@@ -95,6 +110,15 @@ public class LevelGenerator : MonoBehaviour
                 if (outline.transform.position == shopRoom.transform.position)
                 {
                     Instantiate(centerShop, outline.transform.position, transform.rotation).theRoom = outline.GetComponent<Room>();
+                    continue;
+                }
+            }
+
+            if (includeGunRoom)
+            {
+                if (outline.transform.position == gunRoom.transform.position)
+                {
+                    Instantiate(centerGunRoom, outline.transform.position, transform.rotation).theRoom = outline.GetComponent<Room>();
                     continue;
                 }
             }
