@@ -457,6 +457,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 316485285212445135, guid: a7780e48ab2d2d642a2f1de626e9d378, type: 3}
+      propertyPath: distanceToEnd
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 316485285212445135, guid: a7780e48ab2d2d642a2f1de626e9d378, type: 3}
+      propertyPath: maxDistanceToShop
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 316485285212445135, guid: a7780e48ab2d2d642a2f1de626e9d378, type: 3}
+      propertyPath: minDistanceToShop
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 316485285212445135, guid: a7780e48ab2d2d642a2f1de626e9d378, type: 3}
+      propertyPath: maxDistanceToGunRoom
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 316485285212445135, guid: a7780e48ab2d2d642a2f1de626e9d378, type: 3}
+      propertyPath: minDistanceToGunRoom
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7780e48ab2d2d642a2f1de626e9d378, type: 3}
 --- !u!1001 &6083955482007607260
@@ -907,6 +927,10 @@ PrefabInstance:
     - target: {fileID: 8041963626530675179, guid: 946c1d7c8edc015468804b201778ac16, type: 3}
       propertyPath: m_Name
       value: Managers
+      objectReference: {fileID: 0}
+    - target: {fileID: 8041963626530675183, guid: 946c1d7c8edc015468804b201778ac16, type: 3}
+      propertyPath: nextLevel
+      value: Level 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 946c1d7c8edc015468804b201778ac16, type: 3}
