@@ -12,8 +12,6 @@ public class PlayerController : MonoBehaviour
 
     public Transform gunArm;
 
-    private Camera theCam;
-
     public Animator anim;
 
     public SpriteRenderer bodySR;
@@ -31,16 +29,14 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         instance = this;
+
+        DontDestroyOnLoad(gameObject);
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        theCam = Camera.main;
         activeMoveSpeed = moveSpeed;
-
-        UIController.instance.currentGun.sprite = availableGuns[currentGun].gunUI;
-        UIController.instance.gunText.text = availableGuns[currentGun].weaponName;
     }
 
     // Update is called once per frame
@@ -58,7 +54,7 @@ public class PlayerController : MonoBehaviour
             theRB.velocity = moveInput * activeMoveSpeed;
 
             Vector3 mousePosition = Input.mousePosition;
-            Vector3 screenPoint = theCam.WorldToScreenPoint(transform.localPosition);
+            Vector3 screenPoint = CameraController.instance.mainCamera.WorldToScreenPoint(transform.localPosition);
 
             if (mousePosition.x < screenPoint.x)
             {

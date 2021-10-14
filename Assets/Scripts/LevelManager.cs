@@ -14,6 +14,8 @@ public class LevelManager : MonoBehaviour
 
     public int currentCoins;
 
+    public Transform startPoint;
+
     private void Awake()
     {
         instance = this;
@@ -22,6 +24,9 @@ public class LevelManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PlayerController.instance.transform.position = startPoint.position;
+        PlayerController.instance.canMove = true;
+
         Time.timeScale = 1f;
         currentCoins = CharacterTracker.instance.currentCoins;
         UIController.instance.coinText.text = currentCoins.ToString();
@@ -61,7 +66,8 @@ public class LevelManager : MonoBehaviour
             isPaused = true;
 
             Time.timeScale = 0f;
-        } else
+        }
+        else
         {
             UIController.instance.pauseMenu.SetActive(false);
             isPaused = false;
