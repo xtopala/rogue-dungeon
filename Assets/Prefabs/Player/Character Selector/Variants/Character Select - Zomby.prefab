@@ -12,6 +12,10 @@ PrefabInstance:
       value: Character Select - Zomby
       objectReference: {fileID: 0}
     - target: {fileID: 3684881839600959293, guid: d27ac42c826f9f04690c6ef9bdb63293, type: 3}
+      propertyPath: shouldUnlock
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684881839600959293, guid: d27ac42c826f9f04690c6ef9bdb63293, type: 3}
       propertyPath: playerToSpawn
       value: 
       objectReference: {fileID: 8507323469308397815, guid: 052ca211856c5b448bbf5ea2436c0551, type: 3}
@@ -25,11 +29,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8089182334343094828, guid: d27ac42c826f9f04690c6ef9bdb63293, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -3.5
       objectReference: {fileID: 0}
     - target: {fileID: 8089182334343094828, guid: d27ac42c826f9f04690c6ef9bdb63293, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8089182334343094828, guid: d27ac42c826f9f04690c6ef9bdb63293, type: 3}
       propertyPath: m_LocalPosition.z

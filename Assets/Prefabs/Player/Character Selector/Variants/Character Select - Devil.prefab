@@ -8,6 +8,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1439488488861812131, guid: bdf31d9942ae6bc4cab32d19f9ac583b, type: 3}
+      propertyPath: shouldUnlock
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439488488861812131, guid: bdf31d9942ae6bc4cab32d19f9ac583b, type: 3}
       propertyPath: playerToSpawn
       value: 
       objectReference: {fileID: 7594856510566162641, guid: 3c05d8a381f1ba64889729f4a0070a6f, type: 3}
@@ -21,11 +25,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5808464690062170290, guid: bdf31d9942ae6bc4cab32d19f9ac583b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -3.5
       objectReference: {fileID: 0}
     - target: {fileID: 5808464690062170290, guid: bdf31d9942ae6bc4cab32d19f9ac583b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 5808464690062170290, guid: bdf31d9942ae6bc4cab32d19f9ac583b, type: 3}
       propertyPath: m_LocalPosition.z

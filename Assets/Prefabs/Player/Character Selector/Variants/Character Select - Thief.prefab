@@ -13,11 +13,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 85413378931664209, guid: ae62cb34ce80a2b4a995a46acb20795f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 85413378931664209, guid: ae62cb34ce80a2b4a995a46acb20795f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 85413378931664209, guid: ae62cb34ce80a2b4a995a46acb20795f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -59,6 +59,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 57365866442116020, guid: a47294d8f066c634d90ee371916313ff, type: 3}
+    - target: {fileID: 4777945340472522816, guid: ae62cb34ce80a2b4a995a46acb20795f, type: 3}
+      propertyPath: shouldUnlock
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4777945340472522816, guid: ae62cb34ce80a2b4a995a46acb20795f, type: 3}
       propertyPath: playerToSpawn
       value: 
