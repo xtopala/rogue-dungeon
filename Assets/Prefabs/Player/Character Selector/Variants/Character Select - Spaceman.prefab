@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2815258286980183074
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1455396043207101215, guid: 53a5d8816f8b8504aac41ebdfc259f7a, type: 3}
+      propertyPath: playerToSpawn
+      value: 
+      objectReference: {fileID: 6414502213876417820, guid: bab9e5da0fdb2e44da0dd75594f6d37f, type: 3}
+    - target: {fileID: 4521184295708596539, guid: 53a5d8816f8b8504aac41ebdfc259f7a, type: 3}
+      propertyPath: m_Name
+      value: Character Select - Spaceman
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292445700245362190, guid: 53a5d8816f8b8504aac41ebdfc259f7a, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292445700245362190, guid: 53a5d8816f8b8504aac41ebdfc259f7a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292445700245362190, guid: 53a5d8816f8b8504aac41ebdfc259f7a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292445700245362190, guid: 53a5d8816f8b8504aac41ebdfc259f7a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292445700245362190, guid: 53a5d8816f8b8504aac41ebdfc259f7a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292445700245362190, guid: 53a5d8816f8b8504aac41ebdfc259f7a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292445700245362190, guid: 53a5d8816f8b8504aac41ebdfc259f7a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292445700245362190, guid: 53a5d8816f8b8504aac41ebdfc259f7a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292445700245362190, guid: 53a5d8816f8b8504aac41ebdfc259f7a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292445700245362190, guid: 53a5d8816f8b8504aac41ebdfc259f7a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292445700245362190, guid: 53a5d8816f8b8504aac41ebdfc259f7a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6831942753721378069, guid: 53a5d8816f8b8504aac41ebdfc259f7a, type: 3}
+      propertyPath: m_Text
+      value: '''The Spaceman'''
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330607716219938486, guid: 53a5d8816f8b8504aac41ebdfc259f7a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -9119583415266913145, guid: a47294d8f066c634d90ee371916313ff, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 53a5d8816f8b8504aac41ebdfc259f7a, type: 3}

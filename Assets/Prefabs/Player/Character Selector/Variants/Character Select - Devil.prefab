@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5887538281323150819
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1439488488861812131, guid: bdf31d9942ae6bc4cab32d19f9ac583b, type: 3}
+      propertyPath: playerToSpawn
+      value: 
+      objectReference: {fileID: 7594856510566162641, guid: 3c05d8a381f1ba64889729f4a0070a6f, type: 3}
+    - target: {fileID: 4140766233065166727, guid: bdf31d9942ae6bc4cab32d19f9ac583b, type: 3}
+      propertyPath: m_Name
+      value: Character Select - Devil
+      objectReference: {fileID: 0}
+    - target: {fileID: 5808464690062170290, guid: bdf31d9942ae6bc4cab32d19f9ac583b, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5808464690062170290, guid: bdf31d9942ae6bc4cab32d19f9ac583b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5808464690062170290, guid: bdf31d9942ae6bc4cab32d19f9ac583b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5808464690062170290, guid: bdf31d9942ae6bc4cab32d19f9ac583b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5808464690062170290, guid: bdf31d9942ae6bc4cab32d19f9ac583b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5808464690062170290, guid: bdf31d9942ae6bc4cab32d19f9ac583b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5808464690062170290, guid: bdf31d9942ae6bc4cab32d19f9ac583b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5808464690062170290, guid: bdf31d9942ae6bc4cab32d19f9ac583b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5808464690062170290, guid: bdf31d9942ae6bc4cab32d19f9ac583b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5808464690062170290, guid: bdf31d9942ae6bc4cab32d19f9ac583b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5808464690062170290, guid: bdf31d9942ae6bc4cab32d19f9ac583b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6415204385099148201, guid: bdf31d9942ae6bc4cab32d19f9ac583b, type: 3}
+      propertyPath: m_Text
+      value: '''The Devil'''
+      objectReference: {fileID: 0}
+    - target: {fileID: 7094015187044788234, guid: bdf31d9942ae6bc4cab32d19f9ac583b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4791017427084006217, guid: a47294d8f066c634d90ee371916313ff, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bdf31d9942ae6bc4cab32d19f9ac583b, type: 3}
