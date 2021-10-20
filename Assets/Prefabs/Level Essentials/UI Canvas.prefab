@@ -1958,7 +1958,7 @@ MonoBehaviour:
   deathScreen: {fileID: 6083955481941526727}
   fadeScreen: {fileID: 6083955481876014368}
   fadeSpeed: 1
-  newGameScene: Test
+  newGameScene: Character Select
   mainMenuScene: Title Menu
   pauseMenu: {fileID: 450289937}
   mapDisplay: {fileID: 458194312240291353}
